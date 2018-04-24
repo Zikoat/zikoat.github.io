@@ -4,12 +4,23 @@
 	<title>Minefield Resurrected</title>
 <link rel="shortcut icon" href="favicon.ico"></head>
 <body>
-	<div class="menu ui">
-		<a href="https://discord.gg/UWWueDb">Discord</a><br>
-		<a href="https://github.com/Zikoat/infinite-minesweeper">Source code</a><br>
+	<button onclick="" class="menubutton ui"><img alt="menu button" id="menubutton"></button>
+	<div class="menu ui" id="menu" style="display:none;">
+		<div><a href="https://discord.gg/UWWueDb">Discord</a></div>
+		<div><a href="https://github.com/Zikoat/infinite-minesweeper">Source code</a></div>
 		<!-- todo add settings -->
-		Score:<div id="score"></div><br>
-		<button onclick="localStorage.removeItem('defaultSavedField'); window.location.reload();">restart</button><br>
+		<div>
+			Score:<span id="score"></span>
+		</div>
+		<div>
+			<button onclick="
+				localStorage.removeItem('defaultSavedField');
+				window.location.reload();
+				">restart</button><br>
+		</div>
+		<hr>
+		<div>Zoom: Ctrl +</div>
+		<div>Keyboard controls:<br>arrow keys and z/x</div>
 	</div>
 <script type="text/javascript" src="bundle.js"></script></body>
 </html>
