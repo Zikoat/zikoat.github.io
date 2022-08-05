@@ -1,0 +1,15 @@
+{
+  "name": "dashpaint",
+  "version": "0.0.3",
+  "module": "src/index.js",
+  "devDependencies": {
+    "@types/chroma-js": "^2.1.4",
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "chroma-js": "^2.4.2",
+    "phaser": "^3.55.2",
+    "strongly-connected-components": "^1.0.1",
+    "typescript": "^4.7.4"
+  }
+}
